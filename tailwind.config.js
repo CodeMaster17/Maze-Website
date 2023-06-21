@@ -9,7 +9,9 @@ export default {
       backgroundImage: {
         "logoGradient": " linear-gradient(246.75deg, #FF636E 39.2%, #FFBC71 97.91%)",
         "circleLinearGradient":
-          "radial-gradient(50% 50% at 50% 50%, #8401B2 0%, rgba(134, 0, 182, 0) 100%)"
+          "radial-gradient(50% 50% at 50% 50%, #8401B2 0%, rgba(134, 0, 182, 0) 100%)",
+        "circleBlueLinearGradient":
+          "radial-gradient(50% 50.00% at 50% 50.00%, #2251EE 0%, rgba(34, 81, 238, 0.00) 100%)"
       },
       screens: {
         xsm: "360px",

@@ -5,13 +5,22 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+
+    boxShadow: {
+      playerCard: "0px -1px 10px 0px #FFBD70",
+      "waitListForm": " 0px 0px 7px 1px rgba(9, 21, 74, 0.60)"
+    },
+
     extend: {
       backgroundImage: {
         "logoGradient": " linear-gradient(246.75deg, #FF636E 39.2%, #FFBC71 97.91%)",
         "circleLinearGradient":
           "radial-gradient(50% 50% at 50% 50%, #8401B2 0%, rgba(134, 0, 182, 0) 100%)",
         "circleBlueLinearGradient":
-          "radial-gradient(50% 50.00% at 50% 50.00%, #2251EE 0%, rgba(34, 81, 238, 0.00) 100%)"
+          "radial-gradient(50% 50.00% at 50% 50.00%, #2251EE 0%, rgba(34, 81, 238, 0.00) 100%)",
+        "viratCard": "/public/home screen/virat.png",
+        "dhoniCard": "/public/home screen/dhoni.png",
+        "waitListForm": "linear-gradient(314deg, rgba(6, 16, 56, 0.60) 0%, rgba(9, 21, 74, 0.60) 100%)",
       },
       screens: {
         xsm: "360px",
@@ -30,11 +39,16 @@ export default {
         "textWhite": "#FFFFFF",
         "textOrange": "#FF636E",
         "bgGrey": "#464646",
-        "textGreen": "#00DE24"
+        "textGreen": "#00DE24",
+        "purpleBg": "#1B0828",
+        "waitListInput": "#0D1345",
+        "cardsBg": "rgba(36, 41, 68, 0.80)"
+
 
       },
       borderRadius: {
         'btn': '2.35rem',
+        'playerCard': "2rem"
       }
     },
   },

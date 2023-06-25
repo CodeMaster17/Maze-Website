@@ -17,3 +17,34 @@
   background-clip: text;
   text-fill-color: transparent;
 }
+
+.customStyleVirat {
+  background: url(/public//home\ screen/virat.png), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.customStyleVirat::after,
+.customStyleDhoni::after {
+  content: "";
+  position: absolute;
+  background: url("/public/home\ screen/icons/questionMarkk.svg");
+  background-position: center;
+  z-index: 100;
+  width: 4.48rem;
+  height: 6.755rem;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.customStyleDhoni {
+  background: url(/public//home\ screen/dhoni.png), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  ;
+
+}

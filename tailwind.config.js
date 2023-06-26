@@ -8,7 +8,7 @@ export default {
 
     boxShadow: {
       playerCard: "0px -1px 10px 0px #FFBD70",
-      "waitListForm": " 0px 0px 7px 1px rgba(9, 21, 74, 0.60)"
+      "FormShadow": " 0px 0px 7px 1px rgba(9, 21, 74, 0.60)"
     },
 
     extend: {
@@ -20,12 +20,12 @@ export default {
           "radial-gradient(50% 50.00% at 50% 50.00%, #2251EE 0%, rgba(34, 81, 238, 0.00) 100%)",
         "viratCard": "/public/home screen/virat.png",
         "dhoniCard": "/public/home screen/dhoni.png",
-        "waitListForm": "linear-gradient(314deg, rgba(6, 16, 56, 0.60) 0%, rgba(9, 21, 74, 0.60) 100%)",
+        "FormColor": "linear-gradient(314deg, rgba(6, 16, 56, 0.60) 0%, rgba(9, 21, 74, 0.60) 100%)",
       },
       screens: {
         xsm: "360px",
         sm: "480px",
-        md: "768px",
+        md: "740px",
         lg: "976px",
         xl: "1280px",
         "2xl": "1440px",
@@ -42,8 +42,8 @@ export default {
         "textGreen": "#00DE24",
         "purpleBg": "#1B0828",
         "waitListInput": "#0D1345",
-        "cardsBg": "rgba(36, 41, 68, 0.80)"
-
+        "cardsBg": "rgba(36, 41, 68, 0.80)",
+        "borderLine": '#FF636E80'
 
       },
       borderRadius: {

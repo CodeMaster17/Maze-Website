@@ -8,8 +8,8 @@ import location_URL from "/public/home screen/icons/location.svg"
 
 const Footer = () => {
     return (
-        <div className='w-full lg:h-[40vh] xsm:h-[50vh] md:h-[50vh] flex justify-center items-center bg-homeBlackBg ' >
-            <div className="xsm:w-[90%] xsm:h-[80%] ">
+        <div className='w-full lg:h-[50vh] xsm:h-[50vh] md:h-[50vh] flex justify-center items-center bg-homeBlackBg ' >
+            <div className="xsm:w-[90%] xsm:h-[80%] lg:w-[80%] ">
                 <div className='w-full xsm:h-[100%] border-2 border-blue-700 flex lg:flex-row xsm:flex-col justify-between'>
 
                     <div className='w-full xsm:h-[50%]  lg:w-[40%] border-2 border-red-500' >

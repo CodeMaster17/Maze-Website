@@ -9,7 +9,7 @@ const FeatureCards = ({ img_URL, HeadText, Description }) => {
 
                     <img src={img_URL} alt="" className="w-[18.4rem] h-[13.8rem] border-2 border-red-500  " />
                     <p className="lg:text-[2.5rem] xsm:text-[2.019rem] md:text-[2.5rem] text-white font-[700]" > {HeadText} </p>
-                    <p className="w-[100%] h-[30%] md:w-[90%] xsm:text-[1.45rem] md:text-[1.8rem] text-center leading-8 font-light text-white " > {Description} </p>
+                    <p className="w-[100%] h-[30%] md:w-[90%] xsm:text-[1.45rem] md:text-[1.8rem] text-center leading-8 font-light text-white lg:text-[1.4rem]" > {Description} </p>
                 </div>
             </div>
         </>

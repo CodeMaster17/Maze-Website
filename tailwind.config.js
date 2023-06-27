@@ -28,7 +28,7 @@ export default {
         md: "740px",
         lg: "976px",
         xl: "1280px",
-        "2xl": "1440px",
+        xxl: "1440px",
         "3xl": "1990px",
         recentEvents: "542px",
       },
@@ -52,6 +52,6 @@ export default {
       }
     },
   },
-  plugins: [import('tailwindcss'), import('autoprefixer')],
+  plugins: [import('tailwindcss'), import('autoprefixer'), import("daisyui")],
 }
 

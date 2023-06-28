@@ -3,8 +3,8 @@ import Logo from "/public/Logo/logo.svg"
 import { Link } from "react-router-dom"
 const Navbar = () => {
     return (
-        <div className='w-[100vw] xsm:h-[10vh]   lg:h-[15vh] bg-homeBlackBg flex items-center  border-2 border-green-500 justify-center  ' >
-            <div className="flex items-center w-[40%] justify-start border-2 border-red-500  " >
+        <div className='w-[100vw] xsm:h-[10vh]   lg:h-[15vh] bg-homeBlackBg flex items-center  justify-center  ' >
+            <div className="flex items-center w-[80%] justify-start   " >
                 <img src={Logo} alt="" className="w-[2rem] h-[3.3rem] " />
                 <p className="logo not-italic font-medium text-[3.55295rem] leading-[5.3rem] " >maze</p>
             </div>

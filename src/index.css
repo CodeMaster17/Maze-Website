@@ -3,6 +3,31 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer components {
+
+  /* for checking width, height */
+  .borderBlue {
+    @apply border-2 border-blue-800
+  }
+
+  .container {
+    @apply w-[100%] bg-homeBlackBg
+  }
+
+  .heroArea_Cards {
+    @apply absolute flex justify-center items-center rounded-[20px] shadow-playerCard bg-purpleBg
+  }
+
+  .heroArea_Numbers {
+    @apply bg-bgGrey rounded-[100px] absolute z-40 text-center
+  }
+
+  .flex_row_center {
+    @apply flex justify-center items-center
+  }
+}
+
 :root {
   font-size: 10px;
   margin: 0;
@@ -129,24 +154,13 @@ button.learn-more .circle .icon.arrow {
   background: none;
 }
 
-/* 
-button.learn-more .circle .icon.arrow::before {
-  position: absolute;
-  content: "";
-  top: -0.29rem;
-  right: 0.0625rem;
-  width: 0.625rem;
-  height: 0.625rem;
-  border-top: 0.125rem solid #fff;
-  border-right: 0.125rem solid #fff;
-  transform: rotate(45deg);
-} */
+
 
 /* button.learn-more */
 .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   width: 100%;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   position: absolute;
   top: 50%;
   left: 50%;

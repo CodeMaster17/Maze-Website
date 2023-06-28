@@ -33,11 +33,10 @@ export default {
         recentEvents: "542px",
       },
       colors: {
-
         "homeBlackBg": "#08010D",
         "bgBtn": " #1C51FE",
         "textWhite": "#FFFFFF",
-        "textOrange": "#FF636E",
+        "primaryOrange": "#FF636E",
         "bgGrey": "#464646",
         "textGreen": "#00DE24",
         "purpleBg": "#1B0828",
@@ -52,6 +51,6 @@ export default {
       }
     },
   },
-  plugins: [import('tailwindcss'), import('autoprefixer'), import("daisyui")],
+  plugins: [import('tailwindcss'), import('autoprefixer')],
 }
 

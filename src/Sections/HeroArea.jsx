@@ -1,14 +1,14 @@
 import React from 'react'
-import HomePhoto from "/public/home screen/vectors/football.svg"
-import HomePhoto1 from "/public/home screen/vectors/boxing.svg"
-import HomePhoto2 from "/public/home screen/vectors/hockey.svg"
-import Triangle from "/public/home screen/triangle.svg"
-import TriangleDown from "/public/home screen/triangle_down.svg"
-import arrow from "/public/home screen/vectors/btn_arrow.svg"
+import HomePhoto from "../../public/home/vectors/football.svg"
+import HomePhoto1 from "../../public/home/vectors/boxing.svg"
+import HomePhoto2 from "../../public/home/vectors/hockey.svg"
+import Triangle from "../../public/home/triangle.svg"
+import TriangleDown from "../../public/home/triangle_down.svg"
+import arrow from "../../public/home/vectors/btn_arrow.svg"
 
 const HeroArea = () => {
     return (
-        <div className='container lg:h-screen xsm:h-[80vh] flex lg:flex-row xsm:flex-col items-center justify-center  md:h-[110vh] '>
+        <div className='w-[100vw] bg-homeBlackBg lg:h-screen xsm:h-[80vh] flex lg:flex-row xsm:flex-col items-center justify-center  md:h-[110vh] '>
             <div className='lg:w-[40%] xsm:w-[90%] xsm:h-[30%]  lg:h-[100%]  ' >
                 <div className='w-[100%] h-[100%]  flex-col lg:items-start xsm:items-center  xsm:justify-center flex relative ' >
 
@@ -33,16 +33,10 @@ const HeroArea = () => {
 
             <div className='lg:w-[40%] xsm:w-[90%] h-[100%] md:h-[60%] lg:h-[100%] flex_row_center relative' >
 
-
                 {/* Football */}
-                <div className='heroArea_Cards lg:h-[60%] xsm:h-[40%] md:h-[70%] md:w-[40%] ' >
-                    <img src={HomePhoto} alt="Football Image" className='lg:h-[80%] xsm:h-[40%] ' />
+                <div className='heroArea_Cards lg:h-[60%] w-[50%] h-[60%] md:h-[70%] md:w-[40%] ' >
+                    <img src={HomePhoto} alt="Football Image" className='lg:h-[80%] xsm:h-[100%] ' />
                 </div>
-
-
-
-
-
 
                 {/* boxing */}
                 <div className='heroArea_Cards  top-[5%] right-[10%] xsm:h-[35%] xsm:w-[25%] md:right-[14%]  ' >

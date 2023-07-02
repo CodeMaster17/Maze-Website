@@ -1,6 +1,6 @@
-import img1 from "/public/home screen/cards/money-in-hand.png"
-import img2 from "/public/home screen/cards/stars-on-hand.png"
-import img3 from "/public/home screen/cards/hands-in-purse.png"
+import img1 from "../../public/home/cards/money-in-hand.png"
+import img2 from "../../public/home/cards/money-in-hand.png"
+import img3 from "../../public/home/cards/money-in-hand.png"
 const FeatureCards = ({ img_URL, HeadText, Description }) => {
     return (
         <>

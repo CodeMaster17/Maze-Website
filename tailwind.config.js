@@ -48,7 +48,10 @@ export default {
       borderRadius: {
         'btn': '2.35rem',
         'playerCard': "2rem"
-      }
+      },
+      fontFamily: {
+        // 'Dancing-script': 
+      },
     },
   },
   plugins: [import('tailwindcss'), import('autoprefixer')],

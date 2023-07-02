@@ -1,9 +1,9 @@
 
-import Logo from "/public/Logo/logo.svg"
-import instagram_URL from "/public/home screen/icons/instagram.png"
-import linkedIn__URL from "/public/home screen/icons/linkedIn.png"
-import facebook_URL from "/public/home screen/icons/facebook.png"
-import location_URL from "/public/home screen/icons/location.svg"
+import Logo from "../../public/Logo/logo.svg"
+import instagram_URL from "../../public/home/icons/instagram.png"
+import linkedIn__URL from "../../public/home/icons/linkedIn.png"
+import facebook_URL from "../../public/home/icons/facebook.png"
+import location_URL from "../../public/home/icons/location.svg"
 
 
 const Footer = () => {

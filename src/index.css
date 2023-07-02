@@ -12,7 +12,7 @@
   }
 
   .container {
-    @apply w-[100%] bg-homeBlackBg
+    @apply w-[100vw] bg-homeBlackBg
   }
 
   .heroArea_Cards {
@@ -26,6 +26,10 @@
   .flex_row_center {
     @apply flex justify-center items-center
   }
+}
+
+body {
+  background: #08010D;
 }
 
 :root {
@@ -47,7 +51,7 @@
 }
 
 .customStyleVirat {
-  background: url(/public//home\ screen/virat.png), lightgray 50% / cover no-repeat;
+  background: url("../public/home/virat.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -57,7 +61,7 @@
 .customStyleDhoni::after {
   content: "";
   position: absolute;
-  background: url("/public/home\ screen/icons/questionMarkk.svg");
+  background: url("../public/home/icons/questionMarkk.svg");
   background-position: center;
   z-index: 100;
   width: 4.48rem;
@@ -69,7 +73,8 @@
 }
 
 .customStyleDhoni {
-  background: url(/public//home\ screen/dhoni.png), lightgray 50% / cover no-repeat;
+
+  background: url("../public/home/dhoni.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -77,12 +82,11 @@
 
 }
 
-
-
+/* button */
 /* button design */
 button {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   cursor: pointer;
   outline: none;
   border: 0;
@@ -153,8 +157,6 @@ button.learn-more .circle .icon.arrow {
   height: 1rem;
   background: none;
 }
-
-
 
 /* button.learn-more */
 .button-text {

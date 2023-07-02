@@ -1,5 +1,5 @@
 import { Button } from "../utils/Components"
-import Logo from "/public/Logo/logo.svg"
+import Logo from "/Logo/logo.svg"
 import { Link } from "react-router-dom"
 const Navbar = () => {
     return (

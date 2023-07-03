@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer {}
 
 @layer components {
 
@@ -26,7 +27,17 @@
   .flex_row_center {
     @apply flex justify-center items-center
   }
+
+  .inputStyle {
+    @apply flex items-center justify-around
+  }
+
+  .playerCardStyle {
+    @apply lg:w-[15.2rem] lg:h-[16.9rem] xsm:w-[12.344rem] xsm:h-[13.72rem] md:w-[15.2rem] md:h-[16.9rem] shadow-playerCard rounded-playerCard
+  }
+
 }
+
 
 body {
   background: #08010D;

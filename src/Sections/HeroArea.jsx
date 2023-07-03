@@ -19,25 +19,25 @@ const HeroArea = () => {
     return (
         <>
 
-            <div className='w-[100vw] bg-homeBlackBg lg:h-screen xl:h-[80vh]   xsm:h-[80vh] flex lg:flex-row flex-col items-center justify-center relative md:h-[110vh] overflow-hidden'>
-                <div className='lg:w-[40%]   xsm:w-[90%] xsm:h-[30%]  lg:h-[80%]  ' >
-                    <div className='w-[100%] h-[100%]  flex-col lg:items-start xsm:items-center  xsm:justify-center flex relative ' >
+            <div className='w-[100vw] bg-homeBlackBg lg:h-screen xl:h-[80vh] 2xsm:h-[90vh]  xsm:h-[80vh] flex lg:flex-row flex-col items-center justify-center relative md:h-[110vh] overflow-hidden'>
+                <div className='lg:w-[40%]  w-[90%] xsm:h-[30%]  lg:h-[80%]  ' >
+                    <div className='w-[100%] h-[100%]  flex-col lg:items-start 2xsm:items-center  2xsm:justify-center flex relative ' >
 
-                        <p className='md:text-[7rem] lg:text-[7rem] md:font-[700] xsm:text-center lg:text-left  xsm:text-[4rem] text-textWhite md:leading-[8rem] xsm:leading-[4rem] xsm:mt-10  lg:leading-[8.5rem] font-[700] lg:mt-[-25%]' >
+                        <p className='md:text-[7rem] lg:text-[7rem] md:font-[700] 2xsm:text-center lg:text-left 2xsm:text-[3rem]  xsm:text-[4rem] text-textWhite md:leading-[8rem] xsm:leading-[4rem] xsm:mt-10  lg:leading-[8.5rem] font-[700] lg:mt-[-25%]' >
                             Now Invest in
                             <br />
                             your Favorite
                             <br />
                             <span className='text-primaryOrange'>Athlete.</span>
                         </p>
-                        <button className="mt-10 learn-more xsm:w-[65%] md:w-[35%] lg:w-[50%]">
-                            <span className="circle xsm:w-[4rem] xsm:h-[4rem] " aria-hidden="true">
+                        <button className="mt-10 learn-more 2xsm:w-[65%] md:w-[35%] lg:w-[50%]">
+                            <span className="circle 2xsm:w-[3rem] 2xsm:h-[3rem] xsm:w-[4rem] xsm:h-[4rem] " aria-hidden="true">
                                 <span className="icon arrow">
                                     <img src={arrow} alt="" />
                                 </span>
                             </span>
-                            <span className="button-text ">Get Started Now</span>
-                            <button className="leftLearnMore xsm:w-[4rem] xsm:h-[4rem]"></button>
+                            <span className="button-text 2xsm:ml-5 xsm:ml-0">Get Started Now</span>
+                            <button className="leftLearnMore 2xsm:w-[3rem] 2xsm:h-[3rem] xsm:w-[4rem] xsm:h-[4rem]"></button>
                         </button>
                     </div>
                 </div>

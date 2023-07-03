@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../components/Button'
 import { PurpleGradientCircle } from '../components/GradientCircle'
+import Input from '../components/Input'
 
 const Contact = () => {
   return (
@@ -12,25 +13,21 @@ const Contact = () => {
           <p className="text-center text-white xsm:text-[2rem] lg:text-[3rem] font-[700] md:text-[2.5rem]" >Contact Us</p>
         </div>
         <div className="lg:w-[70%] md:w-[70%] xsm:w-[90%] xsm:h-[90%]  xsm:flex  xsm:flex-col xsm:justify-between xsm:items-center   md:h-[80%]  ">
-          <div className="flex items-center justify-around xsm:flex-col xsm:h-[25%] xsm:w-[100%]  xsm:justify-between lg:flex-row md:h-[23%] " >
-
-            <input type="text" placeholder="Name" className="pl-10 bg-waitListInput rounded-[23.5px] xsm:w-[100%] lg:w-[48%]  h-[5rem] text-inputText " />
-            <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder='Contact' className="pl-10 bg-waitListInput rounded-[23.5px] xsm:w-[100%] lg:w-[48%] h-[5rem] text-inputText  " />
+          <div className="inputStyle xsm:flex-col xsm:h-[25%] xsm:w-[100%]  xsm:justify-between lg:flex-row md:h-[23%] " >
+            <Input type="text" placeholder="Name" pattern="" />
+            <Input type="tel" placeholder="Phone No." pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
           </div>
 
 
-          <div className="flex items-center justify-around  xsm:mt-0 xsm:flex-col xsm:h-[25%] xsm:w-[100%] xsm:justify-between  lg:flex-row md:h-[23%]  "   >
-            <input type="email" placeholder="Email" className="pl-10 bg-waitListInput rounded-[23.5px] xsm:w-[100%]  lg:w-[48%]  h-[5rem] text-inputText " />
-            <input type="text" placeholder="Fan Athlete" className="pl-10 bg-waitListInput rounded-[23.5px] xsm:w-[100%]  lg:w-[48%] h-[5rem]  text-inputText " />
+          <div className="inputStyle  xsm:mt-0 xsm:flex-col xsm:h-[25%] xsm:w-[100%] xsm:justify-between  lg:flex-row md:h-[23%]"   >
+            <Input type="email" placeholder="Email" pattern="" />
+            <Input type="text" placeholder="Fan Athlete" pattern="" />
           </div>
 
-          <div className="flex items-center justify-around md:justify-between  xsm:mt-0 xsm:flex-col lg:h-[50%] xsm:h-[40%] xsm:w-[100%] xsm:justify-around  md:h-[40%]  ">
-
+          <div className="inputStyle md:justify-between  xsm:mt-0 xsm:flex-col lg:h-[50%] xsm:h-[40%] xsm:w-[100%] xsm:justify-around  md:h-[40%]  ">
             <div className="xsm:w-[100%] xsm:h-[70%]  lg:h-[100%] md:h-[80%] ">
               <textarea name="" id="" autoComplete='true' cols="30" placeholder='Your Message' className='xsm:w-[100%] p-5 lg:h-[90%] md:h-[100%] xsm:h-[100%] rounded-[18.012px] bg-waitListInput  text-inputText '  ></textarea>
             </div>
-
-
             {/* <button className="   lg:mt-8 bg-bgBtn rounded-[23.5px] xsm:w-[50%] lg:w-[20%] xsm:mt-0 md:h-[4rem] xsm:h-[3.5rem] lg:h-[4.7rem] md:text-[2rem] xsm:text-[1rem] text-center text-white lg:text-[1.4rem" >Submit</button> */}
             <Button text="Submit" />
           </div>

@@ -15,15 +15,13 @@ const Navbar = () => {
 
     return (
         <div className='w-full xsm:h-[10vh]   lg:h-[15vh] bg-homeBlackBg flex items-center  justify-center  ' >
-            <div className="lg:w-[80%] xsm:w-[90%] h-[100%] flex justify-between items-center relative">
+            <div className="lg:w-[80%] 2xsm:w-[90%] mt-2 h-[100%] flex justify-between items-center relative">
 
                 <div className="flex items-center w-[80%] justify-start   " >
-                    <img src={Logo} alt="" className="w-[2rem] h-[3.3rem] " />
-                    <p className="logo not-italic font-medium text-[3.55295rem] leading-[5.3rem] " >maze</p>
+                    <img src={Logo} alt="" className="xsm:w-[2rem] xsm:h-[3.3rem] 2xsm:w-[1.7rem] 2xsm:h-[2.9rem]  " />
+                    <p className="logo not-italic font-medium xsm:text-[3.55295rem] 2xsm:text-[3rem] leading-[5.3rem] " >maze</p>
                 </div>
-
-
-                <button className="flex items-center justify-center border-4 border-yellow-400 w-15 h-15 xsm:block lg:hidden" onClick={ButtonHandler} >
+                <button className="flex items-center justify-center border-4 border-yellow-400 2xsm:w-12 2xsm:h-12 xsm:w-15 xsm:h-15 2xsm:block lg:hidden" onClick={ButtonHandler} >
                     <img src={NavIcon} alt="NavIcon" className="w-full h-full" />
                 </button>
                 {showNavIcon ? (<div className="w-[50%] h-[20rem] bg-waitListInput absolute z-40 right-0 top-10 flex justify-center items-center rounded-[10px]">
@@ -46,9 +44,7 @@ const Navbar = () => {
                 </div>) : (
                     <></>
                 )}
-
-
-                <div className="flex 2xl:w-[40%] lg:w-[50%] md:w-[40%] justify-between items-center    xsm:hidden lg:block " >
+                <div className="flex 2xl:w-[40%] lg:w-[50%] md:w-[40%] justify-between items-center    2xsm:hidden lg:block " >
                     <div className="w-[100%] h-[100%] flex justify-between items-center ">
                         <Link to="/" className="text-textWhite text-[2rem]">Home</Link>
                         <Link to="/" className="text-textWhite text-[2rem]">Contact</Link>

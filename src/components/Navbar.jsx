@@ -14,8 +14,8 @@ const Navbar = () => {
 
 
     return (
-        <div className='w-[100vw] xsm:h-[10vh]   lg:h-[15vh] bg-homeBlackBg flex items-center  justify-center  ' >
-            <div className="w-[80%] h-[100%] flex justify-between items-center relative">
+        <div className='w-full xsm:h-[10vh]   lg:h-[15vh] bg-homeBlackBg flex items-center  justify-center  ' >
+            <div className="lg:w-[80%] xsm:w-[90%] h-[100%] flex justify-between items-center relative">
 
                 <div className="flex items-center w-[80%] justify-start   " >
                     <img src={Logo} alt="" className="w-[2rem] h-[3.3rem] " />
@@ -23,8 +23,8 @@ const Navbar = () => {
                 </div>
 
 
-                <button className="w-20 h-20 border-4 border-yellow-400 xsm:block lg:hidden" onClick={ButtonHandler} >
-                    <img src={NavIcon} alt="NavIcon" />
+                <button className="flex items-center justify-center border-4 border-yellow-400 w-15 h-15 xsm:block lg:hidden" onClick={ButtonHandler} >
+                    <img src={NavIcon} alt="NavIcon" className="w-full h-full" />
                 </button>
                 {showNavIcon ? (<div className="w-[50%] h-[20rem] bg-waitListInput absolute z-40 right-0 top-10 flex justify-center items-center rounded-[10px]">
                     <div className="w-[90%] h-[90%]  ">

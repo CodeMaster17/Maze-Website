@@ -10,6 +10,7 @@ import Footer from '../Sections/Footer'
 const Home = () => {
     return (
         <>
+
             <HeroArea />
             <VisionText />
             <InvestmentIdea />
@@ -18,6 +19,7 @@ const Home = () => {
             <Contact />
             <Footer />
         </>
+
     )
 }
 

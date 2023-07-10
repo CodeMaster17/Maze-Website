@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {}
+
+@layer components {
+
+  /* for checking width, height */
+  .borderBlue {
+    @apply border-2 border-blue-800
+  }
+
+  .container {
+    @apply w-[100vw] bg-homeBlackBg
+  }
+
+  .heroArea_Cards {
+    @apply absolute flex justify-center items-center rounded-[20px] shadow-playerCard bg-purpleBg
+  }
+
+  .heroArea_Numbers {
+    @apply bg-bgGrey rounded-[100px] absolute z-40 text-center
+  }
+
+  .flex_row_center {
+    @apply flex justify-center items-center
+  }
+
+  .inputStyle {
+    @apply flex items-center justify-around
+  }
+
+  .playerCardStyle {
+    @apply shadow-playerCard rounded-playerCard
+  }
+
+}
+
+
+body {
+  background-color: #08010D;
+}
+
+:root {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  /* max-width: 1280px; */
+}
+
+/* gradients */
+.gradientBg {
+  /* background-image: ; */
+}
+
+.gradientBg::before {
+  content: "";
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  background: radial-gradient(50% 50.00% at 50% 50.00%, #8401B2 0%, rgba(134, 0, 182, 0.00) 100%);
+  background-position: fixed;
+  left: -10%;
+  border-radius: 50%;
+  top: -10%;
+  /* border: 2px solid red; */
+  opacity: 0.5;
+
+}
+
+.blueGradientBg::before {
+  content: "";
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  background: radial-gradient(50% 50.00% at 50% 50.00%, #2251EE 0%, rgba(34, 81, 238, 0.00) 100%);
+  background-position: fixed;
+  right: -30%;
+  border-radius: 50%;
+  top: 20%;
+  /* border: 2px solid red; */
+  opacity: 0.5;
+  content: "";
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  background: radial-gradient(50% 50.00% at 50% 50.00%, #2251EE 0%, rgba(34, 81, 238, 0.00) 100%);
+  background-position: fixed;
+  right: -30%;
+  border-radius: 50%;
+  top: 20%;
+  /* border: 2px solid red; */
+  opacity: 0.5;
+
+}
+
+.workingCircleBg::before {
+  content: "";
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  background: radial-gradient(50% 50.00% at 50% 50.00%, #2251EE 0%, rgba(34, 81, 238, 0.00) 100%);
+  background-position: fixed;
+  left: -10%;
+  border-radius: 50%;
+  top: 20%;
+  /* border: 2px solid red; */
+  opacity: 0.5;
+
+}
+
+@media only screen and (min-width:360px) {
+  .gradientBg::before {
+    width: 50vw;
+    height: 50vw;
+    top: -5%;
+    left: -20%;
+  }
+
+  .blueGradientBg::before {
+
+    width: 60vw;
+    height: 60vw;
+    top: 40%;
+    right: -40%;
+  }
+
+  .workingCircleBg::before {
+    width: 80vw;
+    height: 80vw;
+    top: 0%;
+    left: -40%;
+
+  }
+}
+
+@media only screen and (min-width:976px) {
+  .gradientBg::before {
+    width: 30vw;
+    height: 30vw;
+    left: -50%;
+    top: -30%;
+  }
+
+  .blueGradientBg::before {
+
+    width: 40vw;
+    height: 40vw;
+    top: 5%;
+    right: -40%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.logo {
+  background: linear-gradient(246.75deg, #FF636E 39.2%, #FFBC71 97.91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.customStyleVirat {
+  background: url("../public/home/virat.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.customStyleVirat::after,
+.customStyleDhoni::after {
+  content: "";
+  position: absolute;
+  background: url("../public/home/icons/questionMarkk.svg");
+  background-position: center;
+  z-index: 100;
+  width: 4.48rem;
+  height: 6.755rem;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.customStyleDhoni {
+
+  background: url("../public/home/dhoni.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  ;
+
+}
+
+/* button */
+/* button design */
+button {
+  position: relative;
+  /* display: inline-block; */
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  /* border: 2px solid red; */
+}
+
+
+button.learn-more {
+  /* width: 38%; */
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid blue; */
+
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  /* width: 5rem;
+  height: 5rem; */
+  background: linear-gradient(214deg, #FF636E 0%, #FFBC71 100%);
+  border-radius: 50%;
+  /* border: 2px solid red; */
+  z-index: 1;
+}
+
+.leftLearnMore {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  display: block;
+  margin: 0;
+  width: 5rem;
+  height: 5rem;
+  background: transparent;
+  border-radius: 50%;
+  /* border: 2px solid red; */
+  top: 0%;
+  left: -5%;
+  border: 1px solid #FF636E;
+  /* z-index: -1; */
+}
+
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  left: 1.5rem;
+  height: 1rem;
+  background: none;
+}
+
+/* button.learn-more */
+.button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  width: 100%;
+  /* border: 2px solid yellow; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* padding: 0.75rem 0; */
+  /* margin: 0 0 0 1.85rem; */
+  font-weight: 500;
+  /* text-align: center; */
+  color: white;
+  font-size: 1.8rem;
+  z-index: 2;
+}
+
+
+button:hover .circle {
+  border-radius: 1.625rem;
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  /* background: #fff; */
+  transform: translate(1rem, 0);
+  transform: rotate(45deg);
+}
+
+button:hover .button-text {
+  color: #fff;
+}

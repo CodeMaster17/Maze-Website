@@ -16,7 +16,6 @@ const Contact = () => {
   })
 
   const handleChange = (e) => {
-    console.log(e.target.value)
     const { name, value } = e.target
     setUserMessage({ ...userMessage, [name]: value })
   }
@@ -25,16 +24,10 @@ const Contact = () => {
 
     e.preventDefault()
     const { name, contact, email, fanType, message } = userMessage;
-    // console.log("name: " + name)
-    console.log("email: " + email)
-    console.log("fanType: " + fanType)
-    console.log("contact: " + contact)
-    console.log("button clicked")
     const res = await fetch(`https://maze-website-self.vercel.app/sendMail`, {
       method: "POST",
       headers: {
         "Content-type": "application/json"
-
       },
       body: JSON.stringify({
         name,
@@ -76,10 +69,16 @@ const Contact = () => {
 
             <div className="inputStyle  xsm:mt-0 xsm:flex-col xsm:h-[25%] xsm:max-h-[9rem] xsm:w-[100%] xsm:justify-between  lg:flex-row md:h-[23%] "   >
               <Input type="email" value={userMessage.email} onChange={handleChange} name="email" placeholder="Email" pattern="" />
-              <Listbox value={userMessage.fanType} onClick={handleChange} onChange={setSelecteditem} name="fanType" as="div" className="  rounded-[23.5px] xsm:w-[100%]  lg:w-[48%] h-[3.6rem]  min-h-[3.6rem] max-h-[4.7rem] ">
+
+              <Listbox value={userMessage.fanType} onChange={(value) => {
+
+                setUserMessage({ ...userMessage, fanType: value.name })
+              }}
+
+                name="fanType" as="div" className="  rounded-[23.5px] xsm:w-[100%]  lg:w-[48%] h-[3.6rem]  min-h-[3.6rem] max-h-[4.7rem] ">
                 <Listbox.Button className=" bg-waitListInput  text-inputText rounded-[23.5px] w-[100%]    h-[100%] text-left pl-10 flex justify-between items-center pr-10" >
                   <p className='inline-block'>
-                    {selecteditem.name}
+                    {userMessage.fanType ? userMessage.fanType : "Choose One"}
                   </p>
                   <span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

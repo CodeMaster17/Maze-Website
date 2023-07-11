@@ -1,14 +1,14 @@
 import React from 'react'
 import TalentCard from '../components/TalentCard'
 import Heading from '../components/Heading'
-
+import QuestionMark from "../../public/home/players/questionMark.svg"
 
 const AnnouncingPlayers = () => {
     return (
         <div className="lg:w-[45%] xsm:w-[47%] md:w-[40%] h-full rounded-[20px] flex flex-col justify-around items-center bg-cardsBg    hover:scale-[1.01]" >
             <div className="w-[90%] h-[90%] flex flex-col justify-center items-center border-2 rounded-[1.5rem] border-primaryOrange " >
                 <div className='w-[90%] h-[90%] flex flex-col justify-center items-center gap-2 ' >
-                    <img src="../../public/home/players/questionMark.svg" alt="" className="lg:w-[60%] h-[80%] xsm:w-[30%]   " />
+                    <img src={QuestionMark} alt="" className="lg:w-[60%] h-[80%] xsm:w-[30%]   " />
                     <p className="lg:text-[2.5rem] xsm:text-[1.4rem] md:text-[2.5rem] text-white font-[700]" > Announcing soon </p>
                     <p className="w-[100%] h-[30%] md:w-[90%] xsm:text-[1rem] md:text-[1.8rem] text-center leading-8 font-light text-white lg:text-[1.4rem]" > Indian cricket player </p>
                 </div>

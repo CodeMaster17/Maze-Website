@@ -40,7 +40,7 @@ const HeroArea = () => {
                     </div>
                 </div>
 
-                <div className='lg:w-[40%]   w-[90%] h-[100%] md:h-[60%] lg:h-[100%]  blueGradientBg flex_row_center relative  xsm:mt-5' >
+                <div className='lg:w-[40%]   w-[90%] h-[100%] md:h-[60%] lg:h-[100%]  blueGradientBg flex_row_center relative  xsm:mt-10' >
 
                     {/* Football */}
                     <div className='heroArea_Cards lg:h-[70%] w-[50%] h-[60%] md:h-[70%] md:w-[40%] z-10 aspect-9/16 min-h-[29.6rem] min-w-[19.9rem] hover:scale-[1.01]' >

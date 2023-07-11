@@ -22,7 +22,7 @@ const TallyForms = () => {
 
     return (
         <div className='flex items-start justify-center w-full before:'>
-            <div className='w-[80%] border-[1px] p-4 rounded-md bg-FormColor  ' >
+            <div className='w-full border-[1px] p-4 rounded-md bg-FormColor  ' >
 
                 <Helmet>
                     <script src="https://tally.so/widgets/embed.js" />

@@ -2,8 +2,8 @@ import React from 'react'
 
 const TalentCard = () => {
     return (
-        <div className="w-full h-full rounded-[20px] flex flex-col justify-around items-center bg-cardsBg  " >
-            <div className="w-[90%] h-[90%] flex flex-col justify-center items-center border-2 border-primaryOrange" >
+        <div className="w-full h-full rounded-[20px] flex flex-col justify-around items-center bg-cardsBg hover:scale-[1.01] " >
+            <div className="w-[90%] h-[90%] flex flex-col justify-center items-center border-2  rounded-[1.5rem] border-primaryOrange" >
 
                 <div className='w-[90%] h-[90%] flex flex-col justify-center items-center gap-2 ' >
 

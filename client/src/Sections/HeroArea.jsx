@@ -20,11 +20,11 @@ const HeroArea = () => {
     return (
         <>
             {/* <Navbar /> */}
-            <div className='w-full  bg-homeBlackBg lg:h-screen xsm:border-2   xl:h-[80vh] 2xsm:h-[90vh]  xsm:h-[80vh] flex lg:flex-row flex-col items-center justify-center relative md:h-[110vh] overflow-hidden'>
+            <div className='w-full  bg-homeBlackBg lg:h-screen    xl:h-[80vh] 2xsm:h-[90vh]  xsm:h-[80vh] flex lg:flex-row flex-col items-center justify-center relative md:h-[110vh] overflow-hidden'>
                 <div className='lg:w-[40%]  w-[90%] xsm:h-[30%]  lg:h-[80%]  ' >
                     <div className=' gradientBg w-[100%] h-[100%]  flex-col lg:items-start 2xsm:items-center  2xsm:justify-center flex relative ' >
 
-                        <p className='md:text-[7rem] lg:text-[7rem] md:font-[700] 2xsm:text-center lg:text-left 2xsm:text-[3rem]  xsm:text-[4rem] text-textWhite md:leading-[8rem] xsm:leading-[4rem] xsm:mt-10  lg:leading-[8.5rem] font-[700] lg:mt-[-10%]' >
+                        <p className='md:text-[7rem] lg:text-[7rem] md:font-[700] 2xsm:text-center lg:text-left 2xsm:text-[3rem]  xsm:text-[4rem] text-textWhite md:leading-[8rem] xsm:leading-[4rem] xsm:mt-10  lg:leading-[8.5rem] font-[700] lg:mt-[-4%]' >
                             Now Invest in
                             <br />
                             your Favorite
@@ -46,18 +46,18 @@ const HeroArea = () => {
                 <div className='lg:w-[40%]   w-[90%] h-[100%] md:h-[60%] lg:h-[100%]  blueGradientBg flex_row_center relative' >
 
                     {/* Football */}
-                    <div className='heroArea_Cards lg:h-[70%] w-[50%] h-[60%] md:h-[70%] md:w-[40%] z-10 aspect-9/16 min-h-[29.6rem] min-w-[19.9rem]' >
+                    <div className='heroArea_Cards lg:h-[70%] w-[50%] h-[60%] md:h-[70%] md:w-[40%] z-10 aspect-9/16 min-h-[29.6rem] min-w-[19.9rem] hover:scale-[1.01]' >
                         <img src={HomePhoto} alt="Football Image" className='lg:h-[80%] xsm:h-[100%] aspect-9/16' />
                     </div>
 
                     {/* boxing */}
-                    <div className='heroArea_Cards  top-[5%] right-[10%] xsm:h-[35%] xsm:w-[25%] z-20 md:right-[14%]  ' >
+                    <div className='heroArea_Cards  top-[5%] right-[10%] xsm:h-[35%] xsm:w-[25%] z-20 md:right-[14%] hover:scale-[1.01] ' >
                         <img src={HomePhoto1} alt="" className='  xsm:h-[70%] ' />
                         <img src={TriangleDown} alt="" className='absolute top-[-10%] right-[-1%] md:top-[-5%] aspect-9/16' />
                     </div>
                     y
                     {/* hockey */}
-                    <div className='heroArea_Cards  bottom-[5%] left-[5%] md:left-[10%] z-20 xsm:h-[35%] xsm:w-[30%] md:w-[25%] '  >
+                    <div className='heroArea_Cards  bottom-[5%] left-[5%] md:left-[10%] z-20 xsm:h-[35%] xsm:w-[30%] md:w-[25%] hover:scale-[1.01]'  >
                         <img src={HomePhoto2} alt="" className=' h-[80%] aspect-9/16' />
                         <img src={Triangle} alt="" className='absolute top-[-10%] right-[-12%]' />
                     </div>

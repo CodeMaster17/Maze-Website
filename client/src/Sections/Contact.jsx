@@ -1,17 +1,21 @@
 
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Button from '../components/Button'
-import { PurpleGradientCircle } from '../components/GradientCircle'
 import Input from '../components/Input'
-
+import CustomDropdown from '../components/CustomDropdown'
+import { Listbox } from '@headlessui/react'
+import { age } from '../Data/data';
 const Contact = () => {
 
+  const [buttonState, setButtonState] = useState("Send Message")
+  const [selecteditem, setSelecteditem] = useState(age[0])
   const [userMessage, setUserMessage] = useState({
     name: "", contact: "", email: "", fanType: "", message: ""
 
   })
 
   const handleChange = (e) => {
+
     const { name, value } = e.target
     setUserMessage({ ...userMessage, [name]: value })
   }
@@ -41,6 +45,7 @@ const Contact = () => {
       console.log("error")
     }
     else {
+      setButtonState(" Message Sent")
       setUserMessage({ ...userMessage, name: "", email: "", contact: "", fanType: "", message: "" })
       console.log("email sent")
     }
@@ -59,30 +64,55 @@ const Contact = () => {
           <div className="lg:w-[70%] md:w-[70%] xsm:w-[90%] xsm:h-[90%]  xsm:flex  xsm:flex-col xsm:justify-center xsm:gap-6 h-[100%]  xsm:items-center    md:h-[80%]  ">
 
             <div className="inputStyle xsm:flex-col xsm:h-[25%] xsm:w-[100%]  xsm:justify-between lg:flex-row md:h-[23%] xsm:max-h-[9rem] " >
-              <Input type="text" onChange={handleChange} name="name" placeholder="Name" pattern="" />
-              <Input type="tel" onChange={handleChange} name="contact" placeholder="Phone No." pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
+              <Input type="text" value={userMessage.name} onChange={handleChange} name="name" placeholder="Name" pattern="" />
+              <Input type="tel" value={userMessage.contact} onChange={handleChange} name="contact" placeholder="Phone No." pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
             </div>
 
 
             <div className="inputStyle  xsm:mt-0 xsm:flex-col xsm:h-[25%] xsm:max-h-[9rem] xsm:w-[100%] xsm:justify-between  lg:flex-row md:h-[23%] "   >
-              <Input type="email" onChange={handleChange} name="email" placeholder="Email" pattern="" />
-              <Input type="text" onChange={handleChange} name="fanType" placeholder="Fan Athlete" pattern="" />
+              <Input type="email" value={userMessage.email} onChange={handleChange} name="email" placeholder="Email" pattern="" />
+              {/* <Input type="text" value={userMessage.fanType} onChange={handleChange} name="fanType" placeholder="Fan Athlete" pattern="" /> */}
+              {/* <CustomDropdown fanType={userMessage.fanType} onChange={handleChange} /> */}
+              <Listbox value={userMessage.fanType} onChange={setSelecteditem} name="fanType" as="div" className="  rounded-[23.5px] xsm:w-[100%]  lg:w-[48%] h-[3.6rem]  min-h-[3.6rem] max-h-[4.7rem] ">
+                {/* <Listbox.Label>Assignee:</Listbox.Label> */}
+                <Listbox.Button onClick={handleChange} className=" bg-waitListInput  text-inputText rounded-[23.5px] w-[100%]    h-[100%] text-left pl-10 flex justify-between items-center pr-10">
+                  <p className='inline-block'>
+                    {selecteditem.name}
+                  </p>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+
+                  </span>
+                </Listbox.Button>
+
+                <Listbox.Options className="relative z-30 bg-white rounded-[10px] p-3 cursor-pointer ">
+                  {age.map((item) => (
+                    <Listbox.Option
+                      key={item.id}
+                      value={item}
+                      disabled={item.unavailable}
+                      className="w-full hover:bg-slate-400"
+                    >
+                      {item.name}
+
+                    </Listbox.Option>
+                  ))}
+                </Listbox.Options>
+              </Listbox>
             </div>
 
             <div className="inputStyle md:justify-between  xsm:mt-0 xsm:flex-col lg:h-[50%] xsm:h-[40%] xsm:w-[100%] xsm:justify-around  md:h-[40%]  ">
               <div className="xsm:w-[100%] xsm:h-[70%]  lg:h-[100%] md:h-[80%] ">
-                <textarea name="message" id="" autoComplete='true' cols="30" placeholder='Your Message' className='xsm:w-[100%] p-5 lg:h-[90%] md:h-[100%] xsm:h-[100%] rounded-[18.012px] bg-waitListInput  text-inputText lg:min-h-[15rem] '  ></textarea>
+                <textarea name="message" id="" value={userMessage.message} onChange={handleChange} autoComplete='true' cols="30" placeholder='Your Message' className='xsm:w-[100%] p-5 lg:h-[90%] md:h-[100%] xsm:h-[100%] rounded-[18.012px] bg-waitListInput  text-inputText lg:min-h-[15rem] '  ></textarea>
               </div>
-              {/* <button className="   lg:mt-8 bg-bgBtn rounded-[23.5px] xsm:w-[50%] lg:w-[20%] xsm:mt-0 md:h-[4rem] xsm:h-[3.5rem] lg:h-[4.7rem] md:text-[2rem] xsm:text-[1rem] text-center text-white lg:text-[1.4rem" >Submit</button> */}
-              <Button text="Submit" onClick={sendEmail} />
+              <Button text={buttonState} onClick={sendEmail} />
             </div>
 
           </div>
         </div>
       </div>
-      {/* <div className='w-[795px] h-[795px] rounded-full bg-circleBlueLinearGradient absolute left-[-40%] top-[-15%] opacity-[0.4] ' >
-      </div> */}
-      {/* <PurpleGradientCircle /> */}
     </div>
   )
 }

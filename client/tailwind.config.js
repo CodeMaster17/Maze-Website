@@ -41,6 +41,7 @@ export default {
         "cardsBg": "rgba(36, 41, 68, 0.80)",
         "borderLine": '#FF636E80',
         "inputText": "rgba(85, 100, 166, 1)",
+        "navbarBg": "#353535"
 
       },
       screens: {

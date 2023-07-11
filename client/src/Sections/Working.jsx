@@ -4,7 +4,7 @@ import img2 from "../../public/home/cards/stars-on-hand.png"
 const FeatureCards = ({ img_URL, HeadText, Description }) => {
     return (
         <>
-            <div className="lg:w-[30%] xsm:w-[80%] md:w-[44%] md:h-[30%] xsm:h-[30%] lg:h-[80%] xl:h-[90%] pb-5 rounded-[20px] flex flex-col justify-around items-center bg-cardsBg min-h-[28.27rem] max-w-[33.6rem] xsm:mt-10 lg:mt-0 " >
+            <div className="lg:w-[30%] xsm:w-[80%] md:w-[44%] md:h-[30%] xsm:h-[30%] lg:h-[80%] xl:h-[90%] pb-5 rounded-[20px] flex flex-col justify-around items-center bg-cardsBg min-h-[28.27rem] max-w-[33.6rem] xsm:mt-10 lg:mt-0 hover:scale-[1.01] " >
                 <div className="w-[90%] h-[90%] flex flex-col justify-between items-center " >
 
                     <img src={img_URL} alt="" className="w-[18.4rem] h-[13.8rem]   " />

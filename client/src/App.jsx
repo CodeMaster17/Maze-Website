@@ -6,6 +6,7 @@ import Footer from './Sections/Footer'
 import Cursor from './components/Cursor'
 import PageUnderDevelopment from './components/PageUnderDevelopment'
 import TallyForms from './Pages/Tallyforms'
+import Error from './Pages/Error'
 function App() {
 
 

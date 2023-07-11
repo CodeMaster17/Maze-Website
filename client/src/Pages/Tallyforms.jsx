@@ -3,7 +3,21 @@ import { Helmet } from 'react-helmet';
 
 const TallyForms = () => {
     useEffect(() => {
-        Tally.loadEmbeds(); // Call Tally.loadEmbeds() after the component mounts
+        const script = document.createElement('script');
+        script.src = 'https://tally.so/widgets/embed.js';
+        script.async = true;
+
+        script.onload = () => {
+            if (window.Tally) {
+                window.Tally.loadEmbeds();
+            }
+        };
+
+        document.head.appendChild(script);
+
+        return () => {
+            document.head.removeChild(script);
+        };
     }, []);
 
     return (

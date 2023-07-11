@@ -1,7 +1,7 @@
 import React from 'react'
 import TalentCard from '../components/TalentCard'
 import Heading from '../components/Heading'
-import QuestionMark from "../../public/home/players/questionMark.svg"
+import QuestionMark from "/home/players/questionMark.svg"
 
 const AnnouncingPlayers = () => {
     return (

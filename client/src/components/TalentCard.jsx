@@ -1,5 +1,5 @@
 import React from 'react'
-import shashwat_img from "../../public/home/players/shashwat.png"
+import shashwat_img from "/home/players/shashwat.png"
 const TalentCard = () => {
     return (
         <div className="w-full h-full rounded-[20px] flex flex-col justify-around items-center bg-cardsBg hover:scale-[1.01] " >

@@ -3,8 +3,9 @@ import { useState } from 'react'
 import Button from '../components/Button'
 import Input from '../components/Input'
 import CustomDropdown from '../components/CustomDropdown'
-import { Listbox } from '@headlessui/react'
+import { Listbox, Transition } from '@headlessui/react'
 import { age } from '../Data/data';
+// import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 const Contact = () => {
 
   const [buttonState, setButtonState] = useState("Send Message")
@@ -15,7 +16,7 @@ const Contact = () => {
   })
 
   const handleChange = (e) => {
-
+    console.log(e.target.value)
     const { name, value } = e.target
     setUserMessage({ ...userMessage, [name]: value })
   }
@@ -24,8 +25,12 @@ const Contact = () => {
 
     e.preventDefault()
     const { name, contact, email, fanType, message } = userMessage;
+    // console.log("name: " + name)
+    console.log("email: " + email)
+    console.log("fanType: " + fanType)
+    console.log("contact: " + contact)
     console.log("button clicked")
-    const res = await fetch(`http://localhost:8004/sendMail`, {
+    const res = await fetch(`https://maze-website-self.vercel.app/sendMail`, {
       method: "POST",
       headers: {
         "Content-type": "application/json"
@@ -71,11 +76,8 @@ const Contact = () => {
 
             <div className="inputStyle  xsm:mt-0 xsm:flex-col xsm:h-[25%] xsm:max-h-[9rem] xsm:w-[100%] xsm:justify-between  lg:flex-row md:h-[23%] "   >
               <Input type="email" value={userMessage.email} onChange={handleChange} name="email" placeholder="Email" pattern="" />
-              {/* <Input type="text" value={userMessage.fanType} onChange={handleChange} name="fanType" placeholder="Fan Athlete" pattern="" /> */}
-              {/* <CustomDropdown fanType={userMessage.fanType} onChange={handleChange} /> */}
-              <Listbox value={userMessage.fanType} onChange={setSelecteditem} name="fanType" as="div" className="  rounded-[23.5px] xsm:w-[100%]  lg:w-[48%] h-[3.6rem]  min-h-[3.6rem] max-h-[4.7rem] ">
-                {/* <Listbox.Label>Assignee:</Listbox.Label> */}
-                <Listbox.Button onClick={handleChange} className=" bg-waitListInput  text-inputText rounded-[23.5px] w-[100%]    h-[100%] text-left pl-10 flex justify-between items-center pr-10">
+              <Listbox value={userMessage.fanType} onClick={handleChange} onChange={setSelecteditem} name="fanType" as="div" className="  rounded-[23.5px] xsm:w-[100%]  lg:w-[48%] h-[3.6rem]  min-h-[3.6rem] max-h-[4.7rem] ">
+                <Listbox.Button className=" bg-waitListInput  text-inputText rounded-[23.5px] w-[100%]    h-[100%] text-left pl-10 flex justify-between items-center pr-10" >
                   <p className='inline-block'>
                     {selecteditem.name}
                   </p>
@@ -86,20 +88,46 @@ const Contact = () => {
 
                   </span>
                 </Listbox.Button>
+                <Transition
+                  enter="transition duration-100 ease-out"
+                  enterFrom="transform scale-95 opacity-0"
+                  enterTo="transform scale-100 opacity-100"
+                  leave="transition duration-75 ease-out"
+                  leaveFrom="transform scale-100 opacity-100"
+                  leaveTo="transform scale-95 opacity-0"
+                >
 
-                <Listbox.Options className="relative z-30 bg-white rounded-[10px] p-3 cursor-pointer ">
-                  {age.map((item) => (
-                    <Listbox.Option
-                      key={item.id}
-                      value={item}
-                      disabled={item.unavailable}
-                      className="w-full hover:bg-slate-400"
-                    >
-                      {item.name}
+                  <Listbox.Options className="relative z-30 bg-white rounded-[10px] p-3 cursor-pointer ">
+                    {age.map((item) => (
+                      <Listbox.Option
+                        key={item.id}
+                        value={item}
+                        disabled={item.unavailable}
+                        className={({ active }) =>
+                          `relative cursor-default select-none py-2 pl-10 pr-4 ${active ? 'bg-amber-100 text-amber-900' : 'text-gray-900'
+                          }`
+                        }
+                      >
+                        {({ selected }) => (
+                          <>
+                            <span
+                              className={`block truncate ${selected ? 'font-medium' : 'font-normal'
+                                }`}
+                            >
+                              {item.name}
+                            </span>
+                            {selected ? (
+                              <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-amber-600">
+                                {/* <CheckIcon className="w-5 h-5" aria-hidden="true" /> */}
+                              </span>
+                            ) : null}
+                          </>
+                        )}
 
-                    </Listbox.Option>
-                  ))}
-                </Listbox.Options>
+                      </Listbox.Option>
+                    ))}
+                  </Listbox.Options>
+                </Transition>
               </Listbox>
             </div>
 

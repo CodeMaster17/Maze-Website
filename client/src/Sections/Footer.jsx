@@ -1,5 +1,4 @@
 
-import Logo from "../../public/Logo/logo.svg"
 import instagram_img_URL from "../../public/home/icons/instagram.svg"
 import linkedIn__Img__URL from "../../public/home/icons/linkedIn.svg"
 import facebook_img_URL from "../../public/home/icons/facebook.svg"
@@ -11,7 +10,7 @@ import MazeLogo from "../components/MazeLogo"
 
 const Footer = () => {
     return (
-        <div className='w-full lg:h-[50vh] 2xl:h-[30vh] xsm:h-[50vh] md:h-[50vh] flex justify-center items-center bg-homeBlackBg mb-5 xsm:max-h-[40rem] lg:mt-48'  >
+        <div className='w-full lg:h-[50vh] 2xl:h-[40vh] xsm:h-[50vh] md:h-[50vh] flex justify-center items-center bg-homeBlackBg mb-5 xsm:max-h-[40rem] lg:mt-48 mt-24'  >
             <div className="xsm:w-[90%] xsm:h-[80%] lg:w-[80%] ">
                 <div className='w-full xsm:h-[100%]  flex lg:flex-row xsm:flex-col justify-between'>
 
@@ -37,7 +36,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <p className='text-white md:text-[1.6rem] xsm:text-[1.4rem] xsm:mt-5 lg:mt-0'>copyright © 2023 by Yaro Technology Pvt Ltd</p>
+                <p className='text-white md:text-[1.6rem] xsm:text-[1.4rem] xsm:mt-7 lg:mt-0'>copyright © 2023 by Yaro Technology Pvt Ltd</p>
             </div>
         </div>
     )

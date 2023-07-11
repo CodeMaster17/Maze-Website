@@ -5,6 +5,7 @@ import Home from './Pages/Home'
 import Footer from './Sections/Footer'
 import Cursor from './components/Cursor'
 import PageUnderDevelopment from './components/PageUnderDevelopment'
+import TallyForms from './Pages/Tallyforms'
 function App() {
 
 
@@ -16,7 +17,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/development" element={<PageUnderDevelopment />} />
+          <Route path="/forms" element={<TallyForms />} />
         </Routes>
+        <Footer />
       </Router>
 
     </>

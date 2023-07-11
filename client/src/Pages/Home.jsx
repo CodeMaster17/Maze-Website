@@ -24,7 +24,6 @@ const Home = () => {
             <OurTalents />
             <Working />
             <Contact />
-            <Footer />
         </>
 
     )

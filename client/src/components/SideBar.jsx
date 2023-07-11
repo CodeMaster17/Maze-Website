@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { linkedIn_URL } from '../Data/data'
 
 const SideBar = ({ onClick }) => {
     return (
@@ -8,8 +10,8 @@ const SideBar = ({ onClick }) => {
             </button>
 
             <div className='w-[80%]  left-[5%] top-[10%]  mt-[20%] flex flex-col '>
-                <a className='text-[2rem] text-textWhite md:text-[3rem] font-[400] mt-2'>Home</a>
-                <a className='text-[2rem] text-textWhite md:text-[3rem] font-[400] mt-2'>Contact</a>
+                <Link to="/" className='text-[2rem] text-textWhite md:text-[3rem] font-[400] mt-2'>Home</Link>
+                <Link to={linkedIn_URL} className='text-[2rem] text-textWhite md:text-[3rem] font-[400] mt-2'>Contact</Link>
                 <a className='text-[2rem] text-textWhite md:text-[3rem] font-[400] mt-2'>Join Now</a>
             </div>
         </div>

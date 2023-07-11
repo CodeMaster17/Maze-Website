@@ -5,8 +5,6 @@ import HomePhoto2 from "../../public/home/vectors/hockey.svg"
 import Triangle from "../../public/home/triangle.svg"
 import TriangleDown from "../../public/home/triangle_down.svg"
 import arrow from "../../public/home/vectors/btn_arrow.svg"
-import { BlueGradientCircle, PurpleGradientCircle } from '../components/GradientCircle'
-import Navbar from "./Navbar"
 
 const HeroArea = () => {
     const ButtonHandler = () => {
@@ -20,16 +18,16 @@ const HeroArea = () => {
     return (
         <>
             {/* <Navbar /> */}
-            <div className='w-full  bg-homeBlackBg lg:h-screen    xl:h-[80vh] 2xsm:h-[90vh]  xsm:h-[80vh] flex lg:flex-row flex-col items-center justify-center relative md:h-[110vh] overflow-hidden'>
-                <div className='lg:w-[40%]  w-[90%] xsm:h-[30%]  lg:h-[80%]  ' >
+            <div className='w-full  bg-homeBlackBg lg:h-screen    xl:h-[80vh] 2xsm:h-[90vh]  xsm:h-[90vh] flex lg:flex-row flex-col items-center justify-center relative md:h-[110vh] overflow-hidden'>
+                <div className='lg:w-[40%]  w-[90%] xsm:h-[40%]  lg:h-[80%]  ' >
                     <div className=' gradientBg w-[100%] h-[100%]  flex-col lg:items-start 2xsm:items-center  2xsm:justify-center flex relative ' >
 
                         <p className='md:text-[7rem] lg:text-[7rem] md:font-[700] 2xsm:text-center lg:text-left 2xsm:text-[3rem]  xsm:text-[4rem] text-textWhite md:leading-[8rem] xsm:leading-[4rem] xsm:mt-10  lg:leading-[8.5rem] font-[700] lg:mt-[-4%]' >
-                            Now Invest in
+                            Now invest in
                             <br />
-                            your Favorite
+                            your favorite
                             <br />
-                            <span className='text-primaryOrange'>Athlete.</span>
+                            <span className='text-primaryOrange'>athlete.</span>
                         </p>
                         <button className="mt-10 learn-more 2xsm:w-[65%] md:w-[35%] lg:w-[50%]">
                             <span className="circle 2xsm:w-[3rem] 2xsm:h-[3rem] xsm:w-[4rem] xsm:h-[4rem] " aria-hidden="true">
@@ -43,7 +41,7 @@ const HeroArea = () => {
                     </div>
                 </div>
 
-                <div className='lg:w-[40%]   w-[90%] h-[100%] md:h-[60%] lg:h-[100%]  blueGradientBg flex_row_center relative' >
+                <div className='lg:w-[40%]   w-[90%] h-[100%] md:h-[60%] lg:h-[100%]  blueGradientBg flex_row_center relative  xsm:mt-5' >
 
                     {/* Football */}
                     <div className='heroArea_Cards lg:h-[70%] w-[50%] h-[60%] md:h-[70%] md:w-[40%] z-10 aspect-9/16 min-h-[29.6rem] min-w-[19.9rem] hover:scale-[1.01]' >

@@ -18,11 +18,15 @@ const Navbar = () => {
     return (
         <div className='w-full xsm:h-[10vh]   lg:h-[15vh] bg-homeBlackBg flex items-center  justify-center relative  ' >
             <div className="lg:w-[80%] 2xsm:w-[90%] mt-2 h-[100%] flex justify-between items-center ">
-                <MazeLogo />
+                <Link to="/">
 
-                <button className="flex items-center justify-center border-4 border-yellow-400 2xsm:w-12 2xsm:h-12 xsm:w-15 xsm:h-15 2xsm:block lg:hidden" onClick={ButtonHandler} >
+                    <MazeLogo />
+                </Link>
+
+                {/* navicon */}
+                {/* <button className="flex items-center justify-center border-4 border-yellow-400 2xsm:w-12 2xsm:h-12 xsm:w-15 xsm:h-15 2xsm:block lg:hidden" onClick={ButtonHandler} >
                     <img src={NavIcon} alt="NavIcon" className="w-full h-full" />
-                </button>
+                </button> */}
                 {showNavIcon ? (<SideBar onClick={() => setShowNavIcon(!showNavIcon)} />) : (
                     <>
 

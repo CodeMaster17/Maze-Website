@@ -48,7 +48,7 @@ const Contact = () => {
 
 
   return (
-    <div className='flex justify-center items-center w-full  bg-homeBlackBg relative md:max-h-[70rem] xsm:mt-24 lg:mt-48 xsm:min-h-[50rem] h-[50rem] contactCircleBg ' >
+    <div className='flex justify-center items-center w-full  bg-homeBlackBg relative md:max-h-[70rem] xsm:mt-48 lg:mt-48 xsm:min-h-[50rem] h-[50rem] contactCircleBg  ' >
 
       <div className="xsm:w-[90%] xl:w-[70%] lg:w-[80%]  bg-FormColor rounded-[30px] shadow-FormShadow flex flex-col justify-between xsm:gap-10 items-center xsm:pt-6 xsm:pb-2 h-full">
         <div className="w-[100%] ">

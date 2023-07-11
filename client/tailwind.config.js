@@ -8,7 +8,8 @@ export default {
 
     boxShadow: {
       playerCard: "0px -1px 10px 0px #FFBD70",
-      "FormShadow": " 0px 0px 7px 1px rgba(9, 21, 74, 0.60)"
+      "FormShadow": " 0px 0px 7px 1px rgba(9, 21, 74, 0.60)",
+      "cardShadow": " 0px 0px 9px 4px rgba(255, 99, 110, 0.40);"
     },
     placeholderColor: {
       "inputText": "#f0ff",

@@ -5,7 +5,7 @@ import Heading from "../components/Heading"
 const FeatureCards = ({ img_URL, HeadText, Description }) => {
     return (
         <>
-            <div className="lg:w-[30%] xsm:w-4/5 md:w-[44%] md:h-[30%] xsm:h-[30%] lg:h-4/5 xl:h-[90%] pb-5 rounded-[20px] flex flex-col justify-around items-center bg-cardsBg min-h-[28.27rem] max-w-[33.6rem] xsm:mt-10 lg:mt-0 hover:scale-[1.01] " >
+            <div className="lg:w-[30%] xsm:w-4/5 md:w-[44%] md:h-[30%] xsm:h-[30%] lg:h-4/5 xl:h-[90%] pb-5 rounded-[20px] flex flex-col justify-around items-center bg-cardsBg min-h-[28.27rem] max-w-[33.6rem] xsm:mt-10 lg:mt-0 hover:scale-[1.01] hover:shadow-cardShadow" >
                 <div className="w-[90%] h-[90%] flex flex-col justify-between items-center " >
 
                     <img src={img_URL} alt="" className="w-[18.4rem] h-[13.8rem]   " />
@@ -24,7 +24,7 @@ const Working = () => {
             <div className='lg:w-4/5 2xl:w-3/5 xsm:w-[90%]  lg:h-[65%] xsm:h-[90%]  lg:flex lg:flex-row justify-between items-center xsm:flex xsm:flex-col' >
                 <FeatureCards img_URL={img1} HeadText={"Invest in athletes"} Description={"Invest in athletes on maze and own a share of their future earnings."} />
                 <FeatureCards img_URL={img3} HeadText={"Get Royalty Share"} Description={"Invest in athletes on maze and own a share of their future earnings."} />
-                <FeatureCards img_URL={img2} HeadText={"Get Exclusive perks"} Description={"We put athletes and ans together in the same team. Get a chance for to connect them for a provide chat, get personlised gifts and other perks."} />
+                <FeatureCards img_URL={img2} HeadText={"Get Exclusive perks"} Description={" Get a chance for to connect them for a provide chat, get personlised gifts and other perks."} />
             </div>
 
         </div>

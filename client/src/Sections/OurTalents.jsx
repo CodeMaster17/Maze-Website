@@ -1,4 +1,4 @@
-import React from 'react'
+
 import TalentCard from '../components/TalentCard'
 import Heading from '../components/Heading'
 import QuestionMark from "/home/players/questionMark.svg"
@@ -21,6 +21,8 @@ const OurTalents = () => {
     return (
         <div className='w-full lg:h-[80vh] xsm:h-[90vh] flex flex-col justify-center items-center  600 mt-24 '>
             <Heading text={"Our Super Talents"} />
+            <br />
+            <br />
             <div className='lg:w-[80%]  w-[90%] h-[80%] md:h-[85%] flex lg:flex justify-between  items-center xsm:flex-col lg:flex-row ' >
                 <div className='lg:w-[30%] xsm:w-[80%] md:w-[44%] md:h-[50%] xsm:h-[50%] lg:h-[80%] xl:h-[90%]  lg:flex lg:flex-row justify-between items-center xsm:flex xsm:flex-col ' >
                     <TalentCard />

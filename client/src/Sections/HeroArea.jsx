@@ -27,7 +27,7 @@ const HeroArea = () => {
                             <span className='text-primaryOrange'>athlete.</span>
                         </p>
 
-                        <button onClick={handleClick} className="button border-2 mt-10 learn-more 2xsm:w-[65%] md:w-[35%] lg:w-[50%] xsm:ml-20">
+                        <button onClick={handleClick} className="button border-2 mt-10 learn-more 2xsm:w-[65%] md:w-[35%] lg:w-[50%] xsm:ml-20 lg:ml-0 ">
                             <span className="circle 2xsm:w-[3rem] 2xsm:h-[3rem] xsm:w-[4rem] xsm:h-[4rem] " aria-hidden="true">
                                 <span className="icon arrow">
                                     <img src={arrow} alt="" />

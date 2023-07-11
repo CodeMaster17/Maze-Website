@@ -11,5 +11,5 @@ export const facebook_URL = ""
 
 export const footerText = "Maze is a sports tech company that allows fans to invest in the talents they believe and own a part of their future success."
 export const address = "C-71, First Floor, Sector 63, Noida 201301"
-export const visionText = "Build a portfolio of the talents you believe, invest in their better training and diet and get a stake in their future royalty."
+export const visionText = "Build your portfolio of athlete you believe in, invest in their training and own a part of their future earnings."
 export const investmentIdea = "Support the upcoming star of the Indian team financially and emotionally as they pursue greatness."

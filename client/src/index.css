@@ -135,8 +135,8 @@ body {
   .workingCircleBg::before {
     width: 80vw;
     height: 80vw;
-    top: 0%;
-    left: -10%;
+    top: 20%;
+    left: -30%;
 
   }
 }

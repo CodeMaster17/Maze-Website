@@ -7,7 +7,7 @@ const TalentCard = () => {
 
                 <div className='w-[90%] h-[90%] flex flex-col justify-center items-center gap-2 ' >
 
-                    <img src="../../public/home/players/shashwat.png" alt="" className="w-[100%] h-[80%]    " />
+                    <img src="../../public/home/players/shashwat.png" alt="" className="w-[90%] h-[80%]    " />
                     <p className="lg:text-[2.5rem] xsm:text-[2.019rem] md:text-[2.5rem] text-white font-[700]" > Shashwat </p>
                     <p className="w-[100%] h-[30%] md:w-[90%] xsm:text-[1.45rem] md:text-[1.8rem] text-center leading-8 font-light text-white lg:text-[1.4rem]" > Indian badminton player </p>
                 </div>

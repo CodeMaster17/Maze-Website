@@ -2,10 +2,8 @@
 import { useState } from 'react'
 import Button from '../components/Button'
 import Input from '../components/Input'
-import CustomDropdown from '../components/CustomDropdown'
 import { Listbox, Transition } from '@headlessui/react'
 import { age } from '../Data/data';
-// import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 const Contact = () => {
 
   const [buttonState, setButtonState] = useState("Send Message")
@@ -24,7 +22,7 @@ const Contact = () => {
 
     e.preventDefault()
     const { name, contact, email, fanType, message } = userMessage;
-    const res = await fetch(`https://maze-website-self.vercel.app/sendMail`, {
+    const res = await fetch(`https://maze-website-c64bc-default-rtdb.firebaseio.com/userMessage.json`, {
       method: "POST",
       headers: {
         "Content-type": "application/json"
@@ -38,7 +36,6 @@ const Contact = () => {
       })
     })
     const data = await res.json()
-    console.log(data);
     if (data.status === 401 || !data) {
       console.log("error")
     }
@@ -130,7 +127,7 @@ const Contact = () => {
               </Listbox>
             </div>
 
-            <div className="inputStyle md:justify-between  xsm:mt-0 xsm:flex-col lg:h-[50%] xsm:h-[40%] xsm:w-[100%] xsm:justify-around  md:h-[40%]  ">
+            <div className="inputStyle md:justify-between  xsm:mt-0 xsm:flex-col lg:h-1/2 xsm:h-[40%] xsm:w-[100%] xsm:justify-around  md:h-[40%]  ">
               <div className="xsm:w-[100%] xsm:h-[70%]  lg:h-[100%] md:h-[80%] ">
                 <textarea name="message" id="" value={userMessage.message} onChange={handleChange} autoComplete='true' cols="30" placeholder='Your Message' className='xsm:w-[100%] p-5 lg:h-[90%] md:h-[100%] xsm:h-[100%] rounded-[18.012px] bg-waitListInput  text-inputText lg:min-h-[15rem] '  ></textarea>
               </div>

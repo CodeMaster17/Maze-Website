@@ -5,9 +5,9 @@ const CustomDropdown = ({ fanType, handleChange }) => {
     const [selecteditem, setSelecteditem] = useState(age[0])
 
     return (
-        <Listbox value={fanType} onChange={setSelecteditem} as="div" className=" bg-waitListInput rounded-[23.5px] xsm:w-[100%]  lg:w-[48%]  h-[4.7rem]  min-h-[3.6rem] max-h-[4.7rem]">
+        <Listbox value={fanType} onChange={setSelecteditem} as="div" className=" bg-waitListInput rounded-[23.5px] xsm:w-full  lg:w-[48%]  h-[4.7rem]  min-h-[3.6rem] max-h-[4.7rem]">
             {/* <Listbox.Label>Assignee:</Listbox.Label> */}
-            <Listbox.Button className=" bg-waitListInput  text-inputText rounded-[23.5px] w-[100%]    h-[100%] text-left pl-10 flex justify-between items-center pr-10">
+            <Listbox.Button className=" bg-waitListInput  text-inputText rounded-[23.5px] w-full    h-full text-left pl-10 flex justify-between items-center pr-10">
                 <p className='inline-block'>
                     {selecteditem.name}
                 </p>

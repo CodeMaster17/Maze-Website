@@ -1,5 +1,6 @@
 import React from 'react'
 import PlayerCard from '../components/PlayerCard'
+import { investmentIdea } from '../Data/data'
 const InvestmentIdea = () => {
     return (
         <div className="flex items-center justify-center w-full mt-10 bg-homeBlackBg lg:mt-48 xsm:mt-24">
@@ -10,8 +11,8 @@ const InvestmentIdea = () => {
                     </div>
                     <p className='text-white md:text-[2.5rem] lg:text-[2.1rem] md:leading-[4rem] text-center xsm:text-[1.8rem] xsm:leading-[2.8rem] md:font-[500] mt-20' >This is like investing in next <span className='font-semibold' >Dhoni <br /> or Kohli.. Sounds great ?</span> </p>
                 </div>
-                <div className="lg:w-[70%] md:w-[100%]   w-[100%] md:h-[25%] xsm:h-[30%]  lg:h-[100%] md:pl-0 lg:pl-10 font-[600] leading-[5rem] flex justify-center items-center mt-10" >
-                    <p className='lg:text-[3rem] xsm:text-[1.6rem] md:text-[2.2rem] xsm:text-center lg:text-left xsm:font-[100] xsm:leading-[2.4rem] text-white text-left md:leading-[3.5rem] lg:w-[90%]' >Help the next big name of the Indian cricket team in their journey of greatness financially and emotionally.</p>
+                <div className="lg:w-[70%] md:w-[100%]   w-[100%] md:h-[25%] xsm:h-[30%]  lg:h-[100%] md:pl-0 lg:pl-10 font-semibold leading-[5rem] flex justify-center items-center mt-10" >
+                    <p className='lg:text-[3rem] xsm:text-[1.6rem] md:text-[2.2rem] xsm:text-center lg:text-left xsm:font-[100] xsm:leading-[2.4rem] text-white text-left md:leading-[3.5rem] lg:w-[90%]' >{investmentIdea}</p>
                 </div>
             </div>
 

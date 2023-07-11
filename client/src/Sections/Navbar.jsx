@@ -1,10 +1,11 @@
 import { useState } from "react"
 import { Button } from "../utils/Components"
-import Logo from "/Logo/logo.svg"
+
 import { Link } from "react-router-dom"
 import NavIcon from "../../public/home/vectors/NavIcon.svg"
 import Close from "../../public/home/icons/close.svg"
 import SideBar from "../components/SideBar"
+import MazeLogo from "../components/MazeLogo"
 const Navbar = () => {
 
     const [showNavIcon, setShowNavIcon] = useState(false);
@@ -17,11 +18,8 @@ const Navbar = () => {
     return (
         <div className='w-full xsm:h-[10vh]   lg:h-[15vh] bg-homeBlackBg flex items-center  justify-center relative  ' >
             <div className="lg:w-[80%] 2xsm:w-[90%] mt-2 h-[100%] flex justify-between items-center ">
+                <MazeLogo />
 
-                <div className="flex items-center w-[80%] justify-start   " >
-                    <img src={Logo} alt="" className="xsm:w-[2rem] xsm:h-[3.3rem] 2xsm:w-[1.7rem] 2xsm:h-[2.9rem]  " />
-                    <p className="logo not-italic font-medium xsm:text-[3.55295rem] 2xsm:text-[3rem] leading-[5.3rem] " >maze</p>
-                </div>
                 <button className="flex items-center justify-center border-4 border-yellow-400 2xsm:w-12 2xsm:h-12 xsm:w-15 xsm:h-15 2xsm:block lg:hidden" onClick={ButtonHandler} >
                     <img src={NavIcon} alt="NavIcon" className="w-full h-full" />
                 </button>

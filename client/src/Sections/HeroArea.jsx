@@ -5,19 +5,16 @@ import HomePhoto2 from "../../public/home/vectors/hockey.svg"
 import Triangle from "../../public/home/triangle.svg"
 import TriangleDown from "../../public/home/triangle_down.svg"
 import arrow from "../../public/home/vectors/btn_arrow.svg"
+import { Link, useNavigate } from "react-router-dom"
 
 const HeroArea = () => {
-    const ButtonHandler = () => {
-
-        // setShowNavIcon(true)
+    const navigate = useNavigate()
+    const handleClick = () => {
+        navigate("/forms")
     }
-
-    console.log(ButtonHandler)
-
 
     return (
         <>
-            {/* <Navbar /> */}
             <div className='w-full  bg-homeBlackBg lg:h-screen    xl:h-[80vh] 2xsm:h-[90vh]  xsm:h-[90vh] flex lg:flex-row flex-col items-center justify-center relative md:h-[110vh] overflow-hidden'>
                 <div className='lg:w-[40%]  w-[90%] xsm:h-[40%]  lg:h-[80%]  ' >
                     <div className=' gradientBg w-[100%] h-[100%]  flex-col lg:items-start 2xsm:items-center  2xsm:justify-center flex relative ' >
@@ -29,7 +26,8 @@ const HeroArea = () => {
                             <br />
                             <span className='text-primaryOrange'>athlete.</span>
                         </p>
-                        <button className="mt-10 learn-more 2xsm:w-[65%] md:w-[35%] lg:w-[50%]">
+
+                        <button onClick={handleClick} className="button mt-10 learn-more 2xsm:w-[65%] md:w-[35%] lg:w-[50%]">
                             <span className="circle 2xsm:w-[3rem] 2xsm:h-[3rem] xsm:w-[4rem] xsm:h-[4rem] " aria-hidden="true">
                                 <span className="icon arrow">
                                     <img src={arrow} alt="" />
@@ -38,6 +36,7 @@ const HeroArea = () => {
                             <span className="button-text 2xsm:ml-5 xsm:ml-0">Get Started Now</span>
                             <button className="leftLearnMore 2xsm:w-[3rem] 2xsm:h-[3rem] xsm:w-[4rem] xsm:h-[4rem]"></button>
                         </button>
+
                     </div>
                 </div>
 

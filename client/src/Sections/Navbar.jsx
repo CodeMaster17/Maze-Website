@@ -34,9 +34,9 @@ const Navbar = () => {
                     </>
                 )}
                 <div className="flex 2xl:w-[40%] lg:w-[50%] md:w-[40%] justify-between items-center    2xsm:hidden lg:block " >
-                    <div className="w-[100%] h-[100%] flex justify-between items-center ">
-                        <Link to="/" className="text-textWhite text-[2rem]">Home</Link>
-                        <Link to={linkedIn_URL} className="text-textWhite text-[2rem]">Contact</Link>
+                    <div className="w-[100%] h-[100%] flex justify-end items-center ">
+                        {/* <Link to="/" className="text-textWhite text-[2rem]">Home</Link> */}
+                        {/* <Link to={linkedIn_URL} className="text-textWhite text-[2rem]">Contact</Link> */}
                         <Link to="/forms" ><Button text={"Join Now"} /> </Link>
                     </div>
                 </div>

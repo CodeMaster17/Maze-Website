@@ -18,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/development" element={<PageUnderDevelopment />} />
           <Route path="/forms" element={<TallyForms />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
       </Router>

@@ -24,7 +24,7 @@ const Working = () => {
             <div className='lg:w-4/5 2xl:w-3/5 xsm:w-[90%]  lg:h-[65%] xsm:h-[90%]  lg:flex lg:flex-row justify-between items-center xsm:flex xsm:flex-col' >
                 <FeatureCards img_URL={img1} HeadText={"Invest in athletes"} Description={"Invest in athletes on maze and own a share of their future earnings."} />
                 <FeatureCards img_URL={img3} HeadText={"Get Royalty Share"} Description={"Invest in athletes on maze and own a share of their future earnings."} />
-                <FeatureCards img_URL={img2} HeadText={"Get Exclusive perks"} Description={" Get a chance for to connect them for a provide chat, get personlised gifts and other perks."} />
+                <FeatureCards img_URL={img2} HeadText={"Get Exclusive perks"} Description={" Get a chance  to connect them for a private chat, get personalised gifts and other perks."} />
             </div>
 
         </div>
